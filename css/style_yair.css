@@ -1,0 +1,74 @@
+body{
+    background-color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin: 0;
+}
+#Contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 700px;
+    margin: 0 auto;
+}
+#lado_derecho{
+    padding:0 20px 0 0;
+}
+#Lado_izquierdo{
+    padding:0 0 0 20px;
+}
+#foto_perfil{
+    object-fit: cover;
+    width:330px;
+    height: 430px;
+}
+#Titulo{
+width: 600px;
+padding:20px;
+margin: 0 auto;
+}
+.cabeza {
+    width:360px ;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #253248;
+    margin: 0 0 20px 0;
+}
+
+
+
+.cabeza img {
+    width: 100%;
+    
+}
+
+#lado_derecho{
+    padding: 0 10px 0 0 ; 
+}
+#Lado_izquierdo{
+   padding: 0 0 0 10px;
+    
+}
+.cabeza p{
+    margin: 12px 0 12px 20px ;
+}
+
+#boton_regresar{
+    margin: 20px 25px;
+}
+
+#boton_regresar button{
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    border: 1px solid white;
+    color: white;
+}
+
+#boton_regresar button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 200ms;
+}

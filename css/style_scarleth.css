@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.contenedor-titulo {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.encabezado-titulo {
+    margin-bottom: 10px;
+}
+
+.encabezado-titulo h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.seccion-introduccion {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.texto-saludo {
+    flex: 1;
+}
+
+.texto-saludo h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.frase-principal {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.biografia {
+    color: #cccccc;
+    font-size: 1.05em;
+}
+
+.biografia p {
+    margin-bottom: 20px;
+}
+
+.imagen-introduccion {
+    flex: 0 0 400px;
+    max-width: 400px;
+}
+
+.imagen-introduccion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de proyectos realizados*/
+.seccion-proyectos {
+    margin-top: 80px;
+}
+
+.seccion-proyectos h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.cuadricula-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-proyecto {
+    background-color: #3d3d3d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.tarjeta-proyecto.proximamente {
+    border: 2px dashed #666;
+    opacity: 0.8;
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #2b2b2b;
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen-proyecto.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2b2b2b 0%, #3d3d3d 100%);
+}
+
+.icono-proximamente {
+    font-size: 4em;
+    opacity: 0.3;
+}
+
+.contenido-proyecto {
+    padding: 25px;
+}
+
+.contenido-proyecto h4 {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.contenido-proyecto p {
+    color: #cccccc;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+.etiqueta-proximamente {
+    display: inline-block;
+    background-color: #a50174;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Lo de experiencia y herramientas*/
+.seccion-experiencia-herramientas {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+}
+
+.contenedor-experiencia h3,
+.contenedor-herramientas h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.lista-experiencia {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-experiencia li {
+    padding: 12px 0;
+    padding-left: 30px;
+    color: #e0e0e0;
+    position: relative;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+.lista-experiencia li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.cuadricula-herramientas {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.elemento-herramienta {
+    padding: 15px 0;
+    padding-left: 30px;
+    color: #e0e0e0;
+    font-size: 1.05em;
+    position: relative;
+    line-height: 1.6;
+}
+
+.elemento-herramienta::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Sección datos */
+.seccion-datos {
+    margin-top: 80px;
+}
+
+.seccion-datos h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.contenedor-datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-dato {
+    background-color: #3d3d3d;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.texto-dato {
+    color: #e0e0e0;
+    font-size: 1.05em;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* Sección Contacto y Redes Sociales */
+.seccion-contacto-redes {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+}
+
+.contenedor-contacto h3,
+.contenedor-redes h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.info-contacto p,
+.info-redes p {
+    color: #e0e0e0;
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.info-contacto a,
+.info-redes a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-contacto a:hover,
+.info-redes a:hover {
+    color: #790273;
+}
+
+#boton_regresar{
+    margin: 20px 25px;
+}
+
+#boton_regresar button{
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    border: 1px solid white;
+    color: white;
+}
+
+#boton_regresar button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 200ms;
+}
+
+
+/* Esto hacer que sea responsivo */
+@media (max-width: 768px) {
+    .seccion-introduccion {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .imagen-introduccion {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+    
+    .encabezado-portafolio h1 {
+        font-size: 2.5em;
+    }
+    
+    .texto-introduccion h2 {
+        font-size: 2em;
+    }
+}
+/* Responsive para Proyectos */
+@media (max-width: 968px) {
+    .cuadricula-proyectos {
+        grid-template-columns: 1fr;
+    }
+    
+    .imagen-proyecto {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-experiencia-herramientas {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Responsivo para datos y contactos*/
+@media (max-width: 768px) {
+    .contenedor-datos {
+        grid-template-columns: 1fr;
+    }
+    
+    .seccion-contacto-redes {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+/* Responsio para experiencias */
+@media (max-width: 768px) {
+    .seccion-experiencia-herramientas {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

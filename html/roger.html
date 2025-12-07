@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style_roger.css">
+    <title>Portafolio Roger</title>
+</head>
+
+<body>
+    <div id="boton_regresar">
+        <a href="/main.html">
+            <button>
+                Regresar
+            </button>
+        </a>
+    </div>
+    <div class="contenedorMain">
+        <div class="contenedorPresentacion">
+            <div id="title">
+                <h1>Portafolio de Proyectos</h1>
+            </div>
+            <div id="presentacion">
+                <h2>Hola, Soy Roger Garcia</h2>
+                <p class="subtitulo">
+                    un programador en proceso con ganas de aprender y un espíritu creativo
+                </p>
+                <p class="descripcion">
+                    Desde aplicaciones web hasta herramientas personalizadas, diseño soluciones que conectan ideas con
+                    experiencias reales.
+                    Cuando no estoy programando o creando interfaces, me encontrarás explorando nuevas tecnologías,
+                    aprendiendo algo que me intrigue o
+                    mejorando algún proyecto personal. Construyamos algo memorable juntos.
+                </p>
+            </div>
+            <div id="imagenRG">
+                <img src="/recursos/foto_perfil_roger.png" alt="headshot">
+            </div>
+        </div>
+        <div class="contenedorProyectos">
+            <h2>Proyectos</h2>
+            <div class="gridProyectos">
+                <div class="tarjetaProyecto">
+                    <img src="/recursos/concesionariaFornm.png" alt="Concesionaria">
+                    <p>Gestión de una Concesionaria</p>
+                </div>
+
+                <div class="tarjetaProyecto">
+                    <img src="/recursos/plagasForm.png" alt="Control de plagas">
+                    <p>Control de plagas</p>
+                </div>
+
+                <div class="tarjetaProyecto">
+                    <img src="/recursos/sgttScreen.png" alt="Sistema de gestion de Titulacion">
+                    <p>Sistema de gestión de Titulacion</p>
+                </div>
+
+                <div class="tarjetaProyecto">
+                    <img src="/recursos/modeladoBD.png" alt="Modelado">
+                    <p>Modelado de Base de Datos</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorHabilidades">
+            <div class="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Desarrollo Frontend (HTML, CSS, JavaScript)</li>
+                    <li>Desarrollo Backend (C#, Java)</li>
+                    <li>Bases de datos (MySQL, PostgreSQL, SQL Server)</li>
+                    <li>Diseño de interfaces (UI/UX básico)</li>
+                    <li>Control de versiones con Git</li>
+                    <li>Resolución de problemas y algoritmos</li>
+                    <li>Pruebas y depuración de código</li>
+                </ul>
+            </div>
+
+            <div class="herramientas">
+                <h2>Herramientas & Software</h2>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Visual Studio 22</li>
+                    <li>IntelliJ IDEA</li>
+                    <li>Git & GitHub</li>
+                    <li>Figma</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenedorTestimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonio">
+                <p>
+                    Colaborar con Roger fue una experiencia excepcional. Su atención al detalle y su capacidad para
+                    resolver problemas complejos elevaron la calidad del proyecto. Un desarrollador totalmente
+                    confiable.
+                    <span class="nombreTestimonio"> <br><br> Marcos Herrera</span>, Lead Engineer @ NovaTech Solutions
+                </p>
+            </div>
+            <div class="testimonio">
+                <p>
+                    Roger aportó ideas frescas y una ejecución impecable. Su comunicación, dedicación y dominio técnico
+                    marcaron una gran diferencia en el equipo. Sin duda volveremos a trabajar con él.
+                    <span class="nombreTestimonio"> <br><br> Andrea López</span>, Product Manager @ PixelWave Studio
+                </p>
+            </div>
+        </div>
+        <div class="contenedorContactoSocial">
+
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Camilo Arevalo y Vicente Rocafuerte</li>
+                    <li>Valencia, Los Rios, Ecuador</li>
+                    <li>
+                        <a href="javascript:void(0)" class="telf" onclick="copiarTexto('+593979660022')">
+                            +593 97 966 0022
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="correo" onclick="copiarTexto('steven.gs0219@gmail.com')">
+                            steven.gs0219@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                function copiarTexto(texto) {
+                    navigator.clipboard.writeText(texto);
+                }
+            </script>
+            <div class="social">
+                <h2>Socials</h2>
+                <ul>
+                    <li>LinkedIn ~</li>
+                    <li>Instagram ~</li>
+                    <li>GitHub ~</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footerPortafolio">
+        <div class="footerContenido">
+            <p class="footerTitulo">
+                Espero que este portafolio te inspire y te ayude a mostrar tu trabajo de la mejor manera.
+            </p>
+
+            <p class="footerTexto">
+                Si deseas agradecer o apoyar mi trabajo creativo, puedes
+                <a href="https://paypal.me/RogeGSA" target="_blank">invitarme un café ☕️</a>.
+                Tu apoyo significa muchísimo para mí
+            </p>
+
+            <p class="footerFirma">Con cariño, Roger</p>
+        </div>
+    </footer>
+</body>
+
+</html>
