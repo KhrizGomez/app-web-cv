@@ -362,6 +362,10 @@ body {
         gap: 48px;
     }
 
+    #experiencia_izq, #herramientas_der, .subtitulo {
+        width: 300px;
+    }
+
     .contenedor_tarjetas ul {
         padding: 0;
     }
